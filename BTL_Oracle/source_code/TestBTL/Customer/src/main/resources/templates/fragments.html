@@ -57,7 +57,7 @@
                         <option th:text="${session.username != null} ? ${session.username} : 'Authentication'"></option>
                         <option th:if = "${session.username == null}" value="http://localhost:8020/shop/login">Sign In</option>
                         <option th:if = "${session.username != null}" value="http://localhost:8020/shop/logout">Log out</option>
-                        <option value="http://localhost:8020/shop/register" >Sign Up</option>
+
                     </select>
                 </div>
                 <div class="text-slid-box">
